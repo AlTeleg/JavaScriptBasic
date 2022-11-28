@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numberHidden = Math.floor(Math.random() * 1000);
+        console.log('Загаданное число: ', numberHidden);
+        numberGuessTry = prompt("Введите число от 0 до 999: ");
+        if (isNaN(numberGuessTry)) {
+            alert("Введено нечисловое значение");
+        } else if (+numberGuessTry === numberHidden) {
+            alert("Вы угадали число!");
+        } else if (numberGuessTry < numberHidden) {
+                alert("Меньше");
+        } else {
+            alert("Больше");
+        }
+      </script>
+</head>
+<body>
+   <p>Loading, please wait...</p> 
+</body>
+</html>
